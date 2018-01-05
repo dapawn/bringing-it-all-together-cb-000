@@ -2,8 +2,8 @@ class Dog
   attr_accessor :name, :breed
   attr_reader :id
 
-  def initialize(params)
-    @name, @breed, @id = :name, :grade, :id
+  def initialize(name:, breed:, id:nil)
+    @name, @breed, @id = name, breed, id
   end
 
   def self.create_table
