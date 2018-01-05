@@ -51,7 +51,7 @@ class Dog
     end.first
   end
 
-  def self.create(name, breed)
+  def self.create(name:, breed:)
     dog = Student.new(name, breed)
     dog.save
     dog
